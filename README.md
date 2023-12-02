@@ -9,12 +9,19 @@ The user input consists of the initial state of our bookshelf and a series of pi
 Upon running the program, initializing a bookshelf (array of sorted integers), and doing pick/put operations, you will see an example like the following:
 
 Please enter initial arrangement of books followed by newline:
+
 1 2 3 4
+
 [1, 2, 3, 4] 0 0
+
 Type pick <index> or put <height> followed by newline. Type end to exit.
+
 pick 3
+
 [1, 2, 3] 1 1
+
 put 3
+
 [1, 2, 3, 3] 1 2
 
 
@@ -29,9 +36,10 @@ The BookshelfKeeper class contains a Bookshelf and has the pick and put operatio
 
 BookshelfKeeperProg:
 The BookshelfKeeperProg contains the main method and is responsible for reading user input and printing results. It allows the user to perform a series of pickPos and putHeight operations on a bookshelf in an interactive mode with user commands called pick and put. It can also be run in a batch mode by using input and output redirection. Batch testing can executed using the command: 
-java -ea BookshelfKeeperProg < inputFile > yourOutputFile
+java -ea BookshelfKeeperProg < inputFile > yourOutputFile.
 Then, once your output file is generated, compare it with the provided output file using the Linux diff command. The statement below should produce no output if your program works correctly:
-diff yourOutputFile providedOutputFile
+diff yourOutputFile providedOutputFile.
 For example for the test file provided with name test1, you will do something like the following:
         java -ea BookshelfKeeperProg < test/test1 > myout1.out
+        
         diff myout1.out test/test1.out
