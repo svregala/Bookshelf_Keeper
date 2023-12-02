@@ -40,6 +40,7 @@ java -ea BookshelfKeeperProg < inputFile > yourOutputFile.
 Then, once your output file is generated, compare it with the provided output file using the Linux diff command. The statement below should produce no output if your program works correctly:
 diff yourOutputFile providedOutputFile.
 For example for the test file provided with name test1, you will do something like the following:
-        java -ea BookshelfKeeperProg < test/test1 > myout1.out
         
-        diff myout1.out test/test1.out
+      java -ea BookshelfKeeperProg < test/test1 > myout1.out
+
+      diff myout1.out test/test1.out
